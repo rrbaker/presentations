@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>reveal.js - The HTML Presentation Framework</title>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Git, GitHub, and <span style="color:#012B6C">US</span><span style="color:#C2113A">AID</span></h1>
+					<h3>Online Engagement with Nerdy Nerds</h3>
+					<p>
+						<small>Presented by Rob Baker / robaker@usaid.gov / <a href="http://twitter.com/rrbaker">@rrbaker</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h2>Goals for this presentation</h2>
+					<ul>
+						<li>What is "git"? (the seven minute intro)</li>
+						<li>What is "github"? (they're different?)</li>
+						<li>What is USAID doing with git and github?</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What is Git?</h2>
+					<p>
+						<em>"A distributed revision control and source code management (SCM) system"</em> --Wikipedia
+					</p>
+				</section>
+
+				<section>
+					<h2>What is Git?</h2>
+					<p>
+						Translation:<br>
+						<i>A means for nerds to save versions of their code and improve work between teams and also share their progress with others for review, comment, and contributions without losing control of their original work.</i>
+					</p>
+				</section>
+
+				<section>
+					<h2>A little history & context</h2>
+					<img src="http://cl.ly/image/2k35430q3s2H/skitched-20120424-122922.jpg" alt="Linus">
+				</section>
+
+				<section>
+					<h2>The basics</h2>
+					<p>If you've ever used "Track Changes" in Microsoft Word,<br> then you already understand the basics of git!</p>
+					<p><i>Par exemple...</i></p>
+				</section>
+
+				<section>
+					<h2>That's git!</h2>
+					<p>In Geek Speak...</p>
+					<ul>
+						<li>Nerdy nerds write code and use git to manage each version.</li>
+						<li>Other nerds can <i>clone ("Save as...")</i> their work and can make edits.</li>
+						<li>Those edits can be given back to the original version called <i>pull requests ("track changes edits")</i></li>
+						<li>Those edits can come back into the code, or not</li>
+						<li>All of this is enabling collaboration without being destructive to the original work</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>So why git, specifically?</h2>
+				</section>
+
+				<section>
+					<h2>Enter Github</h2>
+					<img src="https://dl.dropboxusercontent.com/u/450814/presentations/materials/20131216-usaid-git/Octocat.png" alt="octocat" style="width:50%;height:50%;background:#fff;">
+				</section>
+
+				<section>
+					<h2>Github.com</h2>
+					<ul>
+						<li>Launched in April 2008</li>
+						<li>As of May 2011 is the most popular online code sharing</li>
+						<li>Still free! (With some paid options but free!)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Github: Making git not just for code!</h2>
+					<ul>
+						<li><a href="http://github.com/fcc">FCC</a> is <a href="http://bl.ocks.org/feomike/7236848">doing some fun things with map data hosted on github.</a></li>
+						<li>Mike Byrne (of FCC) <a href="https://github.com/feomike">wrote his master's thesis</a> using his account.</li>
+						<li>All the cool kids are using github to <a href="http://mapbox.com">host their websites</a> and <a href="http://ben.balter.com">even their blogs</a> these days.</li>
+						<li>This presentation? <a href="https://github.com/rrbaker/presentations/tree/gh-pages/20131216-usaid-git">Github.</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>USAID's github page</h2>
+					<a href="http://github.com/usaid"><img src="https://dl.dropboxusercontent.com/u/450814/presentations/materials/20131216-usaid-git/usaid-github.png" alt="github"></a>
+				</section>
+
+				<section>
+					<h2>So what's USAID doing <br>with our github account?</h2>
+					<p><a href="http://github.com/usaid">Let's have a look.</a></p>
+				</section>
+
+				<section>
+					<h2>What we're doing so far</h2>
+					<p>http://github.com/feedback/issues<br>
+						A project to </p>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme || 'beige', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
